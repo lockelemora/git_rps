@@ -1,27 +1,11 @@
 const rpsArray = ['Rock', 'Paper', 'Scissor'];
 let item = rpsArray[Math.floor(Math.random() * rpsArray.length)];
 const playerSelection = "Rock";
-const computerSelection = getComputerChoice();
+const computerSelection = item;
 let playerScore = 0;
 let computerScore = 0;
-
-function game() {
-    for (let i = 0; i < 5; i++) {
-        if (playRound(playerSelection, computerSelection) === 'Player wins') {
-            return(playerScore += (playerScore + 1));
-        } 
-        else if (playRound(playerSelection, computerSelection) === 'Computer wins') {
-            return(playRound(playerSelection, computerSelection));
-        }
-        else if (playRound(playerSelection, computerSelection) === 'Tie, nobody wins') {
-            return(playRound(playerSelection, computerSelection));
-    }
-    }
-}
-console.log(game())
-
 function getComputerChoice() {
-    return item
+     return item
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -39,3 +23,19 @@ function playRound(playerSelection, computerSelection) {
     return ("Computer wins");
     }
 }
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        if (playRound(playerSelection, computerSelection) === 'Player wins') {
+            console.log(playRound(playerSelection, computerSelection));
+        } 
+        else if (playRound(playerSelection, computerSelection) === 'Computer wins') {
+            console.log(playRound(playerSelection, computerSelection));
+        }
+        else if (playRound(playerSelection, computerSelection) === 'Tie, nobody wins') {
+            console.log(playRound(playerSelection, computerSelection));
+    }
+    }
+}
+
+console.log(game())

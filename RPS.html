@@ -2,13 +2,89 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="css/RPS.css" media="all">
 </head>
 <body>
-  <script src="RPS.js">
-    // Your JavaScript goes here!
-    
-    
-  </script>
+  <h1>Rock, Paper, Scissors!</h1>
+  <p>The best of ouf 5, wins!</p>
+  <div class="gameWrapper">
+    <div class="playerContainer"> 
+      <h2 class="playerLabel">Human</h2>
+      <div class="userContainer">
+        <div class="userProfile">
+          <div class="playerType">
+            <img src="img/user-solid-grey.svg" height="30px" />
+          </div>
+          <div>
+            <h3>Score</h3>
+            <h2 class="userScore">0</h2>
+          </div>
+        </div>
+        <div class="userButtons">
+          <div class="Rock button" data-button="Rock">
+            <img src="img/hand-rock-grey.svg" height="30px" />
+            <h3>Rock</h3>
+          </div>
+          <div class="Paper button" data-button="Paper">
+            <img src="img/hand-paper-grey.svg" height="30px" />
+            <h3>Paper</h3 class="selection">
+          </div>
+          <div class="Scissors button" data-button="Scissors">
+            <img src="img/hand-scissors-grey.svg" height="30px" />
+            <h3>Scissors</h3 class="selection">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="playerContainer"> 
+      <h2 class="playerLabel">Computer</h2>
+      <div class="computerContainer">
+        <div class="computerProfile">
+          <div class="playerType">
+            <img src="img/laptop-solid-grey.svg" height="30px">
+          </div>
+          <div>
+            <h3>Score</h3>
+            <h2 class="computerScore">0</h2>
+          </div>
+        </div>
+        <div class="computerButtons">
+          <div class="button computerRock" data-button="Rock">
+            <img src="img/hand-rock-grey.svg" height="30px" />
+            <h3>Rock</h3>
+          </div>
+          <div class=" button computerPaper" data-button="Paper">
+            <img src="img/hand-paper-grey.svg" height="30px" />
+            <h3>Paper</h3 class="selection">
+          </div>
+          <div class="button computerScissors" data-button="Scissors">
+            <img src="img/hand-scissors-grey.svg" height="30px" />
+            <h3>Scissors</h3 class="selection">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script src="RPS.js"></script>
 </body>
 </html>

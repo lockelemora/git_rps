@@ -1,0 +1,152 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    min-width: 300px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 15px;
+    text-align: center;
+    color: black
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+img {
+    height: 40px;
+}
+
+.gameWrapper {
+    margin: 0 15px;
+}
+
+.button {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #e5e5e5;
+    font-size: 1.2em;
+    padding: 7px;
+    text-align: center;
+}
+
+.userHover {
+    border: 10px solid;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 5px 0px;
+            box-shadow: 0px 1px 5px 0px;    
+}
+
+.userButtons, .computerButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.userButtons > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+}
+
+.computerButtons > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+}
+
+.userProfile, .computerProfile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.button h3:last-child {
+    padding-top: 5px;
+}
+
+.playerContainer {
+    min-width: 250px;
+}
+
+.playerLabel {
+    margin-bottom: 35px;
+    margin-top: 15px;
+    
+}
+
+.userScore, .computerScore {
+    font-size: 2em;
+    color: black;
+}
+
+.userContainer, .computerContainer {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px 3vw;
+    background-color: bisque;
+}
+
+.userProfile, .computerProfile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 15px;
+    padding-bottom: 5px;
+    
+}
+
+.userIcon {
+    line-height: 42px;
+}
+
+.computerPick {
+    border: 10px solid;
+    -webkit-box-shadow: 0px 1px 5px 0px;
+            box-shadow: 0px 1px 5px 0px;  
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.userClick {
+    border: 10px solid;
+    -webkit-box-shadow: 0px 1px 5px 0px;
+            box-shadow: 0px 1px 5px 0px;  
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
